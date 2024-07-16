@@ -1,0 +1,61 @@
+.card{
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid black;
+  margin: 20px auto;
+  box-shadow: 1px 1px 50px 1px;
+}
+.bg{
+    background-image: url(https://flowmingo.ru/wp-content/themes/flowmingo/images/projects/lime/preview/block-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 150px;
+    transition: 1s;
+    background-position: center;
+    &:hover{
+        background-image: url(https://flowmingo.ru/wp-content/themes/flowmingo/images/projects/lime/preview/block-bg-hover.jpg);
+        img:nth-child(2){
+            translate: -150px;
+            opacity: 1;
+            scale: 0.9;
+        }
+
+        img:nth-child(3){
+            translate:0 -200px;
+            opacity: 1;
+            scale: 1;
+        }
+
+        img:nth-child(4){
+            translate: 220px;
+            opacity: 1;
+            scale: 1;
+        }
+
+        img:nth-child(5){
+            translate: 250px -100px ;
+            opacity: 1;
+            scale: 1;
+        }
+
+       .gelik{
+        
+       }
+    }
+    img{
+        position: absolute;
+        transition: 1s;
+        opacity: 0.4;
+        scale: 0.8;
+    }
+    .gelik{
+        z-index: 10;
+        position: relative;
+        opacity: 1;
+       filter:drop-shadow(0 0 30px rgba(0, 0, 0, 0.459)) ;
+    }
+}
